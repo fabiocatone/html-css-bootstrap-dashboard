@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    </link>
+    <title>Document</title>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./img/duck.png" class="duck"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Catalogo Libri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Anagrafica utenti</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Storico Prestiti
+                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Help</a>
+                    </li>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-auto" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <main class="mx-3">
+        <div class="title-form my-4">
+            <h2> Nuovo Libro</h2>
+        </div>
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+                <label for="validationCustom01" class="form-label"> Nome autore </label>
+                <input type="text" class="form-control text-secondary" id="validationCustom01"
+                    value="Inserisci il nome dell'autore" required>
+                <div class="valid-feedback">
+                    Corretto!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Cognome Autore</label>
+                <input type="text" class="form-control text-secondary" id="validationCustom02"
+                    value="Inserisci il cognome" required>
+                <div class="valid-feedback">
+                    Corretto!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">Titolo</label>
+                <input type="text" class="form-control text-secondary" id="validationCustomUsername"
+                    aria-describedby="inputGroupPrepend" value="Inserisci il titolo del libro" required>
+                <div class="form-text"> Titolo Versione italiana </div>
+                <div class="invalid-feedback">
+                    Scegli un titolo corretto.
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom04" class="form-label">Genere</label>
+                <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Scegli il genere</option>
+                    <option>...</option>
+                </select>
+                <div class="invalid-feedback">
+                    Scegli un genere corretto
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom05" class="form-label">ISBN#</label>
+                <input type="text" class="form-control" id="validationCustom05" value="Inserisci il codice ISBN#"
+                    required>
+                <div class="invalid-feedback">
+                    Inserisci un codice ISBN# corretto
+                </div>
+            </div>
+            <hr class="text-secondary">
+            <div class="col-12">
+  <label for="note" class="form-label">Note</label>
+  <textarea class="form-control" id="note" rows="4"
+    placeholder="Inserisci eventuali note sul libro"></textarea>
+</div>
+
+
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Disponibile anche in digitale
+                    </label>
+                    <div class="invalid-feedback">
+                        You must agree before submitting.
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit"> Aggiungi Libro </button>
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>
