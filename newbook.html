@@ -61,7 +61,7 @@
             <h2> Nuovo Libro</h2>
         </div>
         <form class="row g-3 needs-validation" novalidate>
-            <div class="col-md-6 col-sm-6 col-lg-12">
+            <div class="col-md-6 col-sm-6 col-lg-6">
                 <label for="validationCustom01" class="form-label"> Nome autore </label>
                 <input type="text" class="form-control text-secondary" id="validationCustom01"
                     value="Inserisci il nome dell'autore" required>
@@ -69,7 +69,7 @@
                     Corretto!
                 </div>
             </div>
-            <div class="col-md-4 col-lg-1">
+            <div class="col-md-4 col-lg-6">
                 <label for="validationCustom02" class="form-label">Cognome Autore</label>
                 <input type="text" class="form-control text-secondary" id="validationCustom02"
                     value="Inserisci il cognome" required>
@@ -77,7 +77,7 @@
                     Corretto!
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-lg-12">
                 <label for="validationCustomUsername" class="form-label">Titolo</label>
                 <input type="text" class="form-control text-secondary" id="validationCustomUsername"
                     aria-describedby="inputGroupPrepend" value="Inserisci il titolo del libro" required>
@@ -86,7 +86,7 @@
                     Scegli un titolo corretto.
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-lg-4">
                 <label for="validationCustom04" class="form-label">Genere</label>
                 <select class="form-select" id="validationCustom04" required>
                     <option selected disabled value="">Scegli il genere</option>
@@ -96,9 +96,17 @@
                     Scegli un genere corretto
                 </div>
             </div>
+            <div class="col-md-3 col-lg-4">
+                <label for="validationCustom05" class="form-label">Anno di pubblicazione</label>
+                <input type="text" class="form-control" id="validationCustom05" value="Inserisci l'anno di pubblicazione"
+                    required>
+                <div class="invalid-feedback">
+                    Inserisci un codice ISBN# corretto
+                </div>
+            </div>
             <div class="col-md-3">
                 <label for="validationCustom05" class="form-label">ISBN#</label>
-                <input type="text" class="form-control" id="validationCustom05" value="Inserisci il codice ISBN#"
+                <input type="text" class="form-control" id="validationCustom06" value="Inserisci il codice ISBN#"
                     required>
                 <div class="invalid-feedback">
                     Inserisci un codice ISBN# corretto
