@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
-    </link>
     <title>Document</title>
 </head>
 
@@ -15,7 +13,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./img/duck.png" class="duck"></a>
+            <a class="navbar-brand" href="#"><img src="./img/duck.png" class="duck" width="40px" height="40px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -56,13 +54,14 @@
                 </form>
             </div>
         </div>
+
     </nav>
-    <main class="mx-3">
+    <main class="container">
         <div class="title-form my-4">
             <h2> Nuovo Libro</h2>
         </div>
         <form class="row g-3 needs-validation" novalidate>
-            <div class="col-md-4">
+            <div class="col-md-6 col-sm-6 col-lg-12">
                 <label for="validationCustom01" class="form-label"> Nome autore </label>
                 <input type="text" class="form-control text-secondary" id="validationCustom01"
                     value="Inserisci il nome dell'autore" required>
@@ -70,7 +69,7 @@
                     Corretto!
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-lg-1">
                 <label for="validationCustom02" class="form-label">Cognome Autore</label>
                 <input type="text" class="form-control text-secondary" id="validationCustom02"
                     value="Inserisci il cognome" required>
@@ -107,10 +106,10 @@
             </div>
             <hr class="text-secondary">
             <div class="col-12">
-  <label for="note" class="form-label">Note</label>
-  <textarea class="form-control" id="note" rows="4"
-    placeholder="Inserisci eventuali note sul libro"></textarea>
-</div>
+                <label for="note" class="form-label">Note</label>
+                <textarea class="form-control" id="note" rows="4"
+                    placeholder="Inserisci eventuali note sul libro"></textarea>
+            </div>
 
 
             </div>
@@ -128,6 +127,7 @@
             <div class="col-12">
                 <button class="btn btn-primary" type="submit"> Aggiungi Libro </button>
             </div>
+
         </form>
     </main>
 
